@@ -1,0 +1,11 @@
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ee2b8c;
+  border-radius: 9999px;
+}
