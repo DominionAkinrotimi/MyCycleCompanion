@@ -71,7 +71,6 @@ Access the website:
 ## 💡 Notes
 
 * All API calls are routed through your backend (`localhost:5000`).
-* Chat logs are automatically stored in Supabase.
 * Future work/ proposed extensions:
 
   * User authentication
@@ -82,4 +81,5 @@ Access the website:
 
 
 Built with 💕 by DominionAkinrotimi using **Node.js, Express, OpenAI API, Supabase, and TailwindCSS**.
+
 
