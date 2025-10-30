@@ -12,7 +12,7 @@ Access the website:
 ## 🧩 Project Structure
 ```
 
-/health-companion
+/ MyCycleCompanion
 ├── frontend/
 │   ├── index.html        # Landing page
 │   ├── chat.html         # Chat interface
@@ -81,5 +81,6 @@ Access the website:
 
 
 Built with 💕 by DominionAkinrotimi using **Node.js, Express, OpenAI API, Supabase, and TailwindCSS**.
+
 
 
