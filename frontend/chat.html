@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>💗 MyCycleCompanion – Chat</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ee2b8c",
+              "background-light": "#f8f6f7",
+              "background-dark": "#221019",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+
+  <body class="bg-background-light dark:bg-background-dark font-display text-[#181114] dark:text-gray-200 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="flex items-center justify-between px-6 py-3 border-b border-primary/20 dark:border-primary/30 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10">
+      <div class="flex items-center gap-2">
+        <div class="text-primary">
+          <svg class="size-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+          </svg>
+        </div>
+        <h2 class="text-lg font-bold text-[#181114] dark:text-white">💗 MyCycleCompanion</h2>
+      </div>
+      <a href="index.html" class="text-sm text-primary font-semibold hover:underline">← Back Home</a>
+    </header>
+
+    <!-- Chat Area -->
+    <main id="chat-container" class="flex-1 overflow-y-auto px-4 py-6 sm:px-8 md:px-16 lg:px-24 xl:px-48 space-y-6">
+      <div class="text-center">
+        <p class="text-gray-600 dark:text-gray-400 text-sm">💬 You’re chatting with your personal cycle companion. Remember: this is supportive information, not medical advice.</p>
+      </div>
+    </main>
+
+    <!-- Chat Input -->
+    <footer class="border-t border-primary/20 dark:border-primary/30 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md px-4 py-3 sm:px-8 md:px-16 lg:px-24 xl:px-48">
+      <div class="flex items-center gap-2">
+        <input id="user-input" type="text" placeholder="Type your message..." class="flex-1 rounded-full border border-primary/30 bg-white dark:bg-[#2b1d25] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+        <button id="send-btn" class="flex items-center justify-center bg-primary text-white rounded-full h-10 w-10 hover:bg-opacity-90 transition-transform hover:scale-105">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
