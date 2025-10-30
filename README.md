@@ -5,7 +5,7 @@ The chatbot interprets your cycle, explains what may be happening in your body (
 
 It’s especially needed because many women experience confusion and anxiety around their reproductive health, yet most apps focus only on data tracking, not understanding.
 
-This project fills that gap — offering a local, empathetic, AI-driven companion that talks with you, not at you. 💬❤️
+This project fills that gap offering a local, empathetic, AI-driven companion that talks with you, not at you. 💬❤️
 
 Access the website: 
 
@@ -64,7 +64,7 @@ Access the website:
    ```
 
 5. **Open the chat**
-   Open `frontend/chat.html` in your browser.
+   - Open `frontend/chat.html` in your browser.
 
 ---
 
@@ -72,7 +72,7 @@ Access the website:
 
 * All API calls are routed through your backend (`localhost:5000`).
 * Chat logs are automatically stored in Supabase.
-* You can later extend this with:
+* Future work/ proposed extensions:
 
   * User authentication
   * Personal cycle tracking
@@ -82,3 +82,4 @@ Access the website:
 
 
 Built with 💕 by DominionAkinrotimi using **Node.js, Express, OpenAI API, Supabase, and TailwindCSS**.
+
