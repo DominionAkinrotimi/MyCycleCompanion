@@ -24,18 +24,18 @@ Access the website:
 │   └── db/
 │       └── supabase.js   # Supabase client and helper
 
-````
+```
 
 ---
 
 ## ⚙️ Setup
 
-1. **Install dependencies**
-   ```bash
+1. **Install dependencies - bash**
+   ```
    cd backend
    npm init -y
    npm install express cors dotenv node-fetch @supabase/supabase-js
-````
+   ```
 
 2. **Create a `.env` file in `/backend`**
 
@@ -46,9 +46,9 @@ Access the website:
    PORT=5000
    ```
 
-3. **Create your Supabase table**
+3. **Create your Supabase table in sql**
 
-   ```sql
+   ```
    create table chat_logs (
      id bigint generated always as identity primary key,
      user_message text,
@@ -57,9 +57,9 @@ Access the website:
    );
    ```
 
-4. **Run the backend**
+4. **Run the backend - bash**
 
-   ```bash
+   ```
    node server.js
    ```
 
@@ -80,4 +80,5 @@ Access the website:
 
 ---
 
-Built with 💕 using **Node.js, Express, OpenAI API, Supabase, and TailwindCSS**.
+
+Built with 💕 by DominionAkinrotimi using **Node.js, Express, OpenAI API, Supabase, and TailwindCSS**.
