@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/frontend/index.html" },
-    { "source": "/chat", "destination": "/frontend/chat.html" }
+    { "source": "/", "destination": "/frontend/index" },
+    { "source": "/chat", "destination": "/frontend/chat" }
   ]
 }
