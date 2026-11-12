@@ -7,7 +7,7 @@ It’s especially needed because many women experience confusion and anxiety aro
 
 This project fills that gap offering a local, empathetic, AI-driven companion that talks with you, not at you. 💬❤️
 
-Access the website: 
+Access the website: https://my-cycle-companion.vercel.app
 
 ## 🧩 Project Structure
 ```
@@ -19,7 +19,10 @@ Access the website:
 │   ├── styles.css
 │   └── script.js         # Chat logic and API call
 │
-├── backend/
+├── api/
+│   └── chat.js           # Vercel serverless function used by the live site
+│
+├── backend/              # Optional Express server for running locally
 │   ├── server.js         # Express + OpenAI + Supabase backend
 │   └── db/
 │       └── supabase.js   # Supabase client and helper
@@ -28,7 +31,17 @@ Access the website:
 
 ---
 
-## ⚙️ Setup
+## 🚀 Deploy on Vercel (live site)
+
+1. Import the repo into Vercel (no build step needed). `vercel.json` serves the landing page at `/` and the chat at `/chat`, and `api/chat.js` answers `/api/chat`.
+2. In **Project Settings → Environment Variables**, add:
+   - `OPENAI_API_KEY` (required)
+   - `SUPABASE_URL` and `SUPABASE_SERVICE_KEY` (optional, saves chat logs)
+3. Redeploy. Until `OPENAI_API_KEY` is set, the chat replies that it's being set up.
+
+Keys live only in Vercel's settings, never in the repo. The function limits message length, reply length and messages per visitor to keep API costs in check.
+
+## ⚙️ Run locally
 
 1. **Install dependencies - bash**
    ```
@@ -70,7 +83,7 @@ Access the website:
 
 ## 💡 Notes
 
-* All API calls are routed through your backend (`localhost:5000`).
+* On the live site, chat goes through `api/chat.js`. Locally you can run `backend/server.js` instead.
 * Future work/ proposed extensions:
 
   * User authentication

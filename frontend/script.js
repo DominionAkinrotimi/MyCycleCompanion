@@ -1,6 +1,7 @@
 const chatContainer = document.getElementById("chat-container");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
+const chatHistory = []; // recent turns, sent so replies follow the conversation
 
 function addMessage(role, text) {
   const bubble = document.createElement("div");
@@ -39,15 +40,19 @@ async function sendMessage() {
   chatContainer.scrollTo({ top: chatContainer.scrollHeight, behavior: "smooth" });
 
   try {
-    const res = await fetch("http://localhost:5000/api/chat", {
+    const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({ message, history: chatHistory.slice(-8) }),
     });
     const data = await res.json();
+    const reply = data.reply || "Sorry, something went wrong. Please try again.";
 
     chatContainer.removeChild(loadingWrapper);
-    addMessage("assistant", data.reply);
+    addMessage("assistant", reply);
+    if (res.ok) {
+      chatHistory.push({ role: "user", content: message }, { role: "assistant", content: reply });
+    }
   } catch (error) {
     chatContainer.removeChild(loadingWrapper);
     addMessage("assistant", "Sorry, I couldn’t connect right now. Please try again.");
