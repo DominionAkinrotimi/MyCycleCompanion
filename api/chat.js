@@ -2,6 +2,8 @@
 // Keys come from Vercel environment variables, never from the repo:
 //   OPENAI_API_KEY (required), SUPABASE_URL + SUPABASE_SERVICE_KEY (optional chat logging)
 
+const { lessonReply, lessonNotes } = require("./_lessons");
+
 const SYSTEM_PROMPT = "You are \"💗 MyCycleCompanion\" — an AI-powered women’s health assistant built to talk with women about their bodies and cycle in calm, simple English. \nYou are not a period tracker. You are a personal companion that understands, explains, and supports. \n\nYour role is to listen, ask relevant questions and respond like a thoughtful friend who understands women’s health, not like a doctor.\nAlways keep your tone friendly, warm, and reassuring.\n\nYour main abilities are:\n1. Cycle Interpreter — explain what might be happening during any stage of the menstrual cycle (e.g., Day 29, late periods, spotting, cramps, etc.) in a natural, simple way.\n2. Post-Pill & Emergency Contraception Guide — help users understand what happens to their body after taking pills like Postinor or other contraceptives. Clarify side effects, expected changes, and when testing might be needed.\n3. Fertility & Body Signal Decoder — help users understand body changes like breast fullness, discharge, or mood swings. Connect it to natural hormonal changes without judgment.\n4. Emotional + Physical Sync Support — help users connect how they feel emotionally or physically to their cycle. Suggest gentle self-care ideas (like rest, hydration, warm compress, or reassurance).\n\nRules:\n- Use simple, clear English — avoid big medical words unless you explain them in plain terms.\n- Never give medical diagnoses or prescriptions.\n- Speak with empathy and cultural awareness (especially for African women).\n- Keep responses short, calm, and easy to read — as if chatting on WhatsApp.\n- When unsure, gently remind users to consult a healthcare provider.\n- Always close with reassurance when possible.";
 
 const MAX_MESSAGE = 1000;   // characters per message
@@ -52,12 +54,16 @@ module.exports = async (req, res) => {
   if (limited(ip)) {
     return res.status(429).json({ reply: "You're sending messages quickly. Please wait a few minutes and try again." });
   }
+  // Without an AI key, answer from the lesson library so the app still works.
   if (!process.env.OPENAI_API_KEY) {
-    return res.status(503).json({ reply: "MyCycleCompanion is being set up and will be ready to chat soon." });
+    const { reply, lessons } = lessonReply(message);
+    return res.status(200).json({ reply, lessons, mode: "lessons" });
   }
 
   const history = Array.isArray(body.history) ? body.history.slice(-MAX_HISTORY) : [];
   const messages = [{ role: "system", content: SYSTEM_PROMPT }];
+  const notes = lessonNotes(message);
+  if (notes) messages.push({ role: "system", content: notes });
   for (const turn of history) {
     if ((turn.role === "user" || turn.role === "assistant") && typeof turn.content === "string") {
       messages.push({ role: turn.role, content: turn.content.slice(0, MAX_MESSAGE) });
@@ -77,11 +83,12 @@ module.exports = async (req, res) => {
     const data = await r.json();
     if (!r.ok) {
       console.error("OpenAI error:", r.status, data.error && data.error.message);
-      return res.status(502).json({ reply: "Sorry, I couldn't think of a reply just now. Please try again." });
+      const { reply, lessons } = lessonReply(message);
+      return res.status(200).json({ reply, lessons, mode: "lessons" });
     }
     const reply = (data.choices && data.choices[0] && data.choices[0].message.content) || "Hmm, I'm not sure what to say.";
     await saveChatLog(message, reply);
-    return res.status(200).json({ reply });
+    return res.status(200).json({ reply, mode: "ai" });
   } catch (err) {
     console.error("chat failed:", err);
     return res.status(500).json({ reply: "Sorry, I couldn't connect right now. Please try again." });

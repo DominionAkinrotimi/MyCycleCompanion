@@ -43,7 +43,10 @@
         </div>
         <h2 class="text-lg font-bold text-[#181114] dark:text-white">💗 MyCycleCompanion</h2>
       </div>
-      <a href="/" class="text-sm text-primary font-semibold hover:underline">← Back Home</a>
+      <nav class="flex items-center gap-4">
+        <a href="/lessons" class="text-sm text-primary font-semibold hover:underline">Lessons</a>
+        <a href="/" class="text-sm text-primary font-semibold hover:underline">← Back Home</a>
+      </nav>
     </header>
 
     <!-- Chat Area -->
@@ -55,6 +58,13 @@
 
     <!-- Chat Input -->
     <footer class="border-t border-primary/20 dark:border-primary/30 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md px-4 py-3 sm:px-8 md:px-16 lg:px-24 xl:px-48">
+      <div id="suggestions" class="flex gap-2 overflow-x-auto pb-3 text-xs">
+        <button type="button" class="suggestion shrink-0 rounded-full border border-primary/40 bg-white dark:bg-[#2b1d25] px-3 py-1.5 text-primary hover:bg-primary/10">Why is my period late?</button>
+        <button type="button" class="suggestion shrink-0 rounded-full border border-primary/40 bg-white dark:bg-[#2b1d25] px-3 py-1.5 text-primary hover:bg-primary/10">I took Postinor. What should I expect?</button>
+        <button type="button" class="suggestion shrink-0 rounded-full border border-primary/40 bg-white dark:bg-[#2b1d25] px-3 py-1.5 text-primary hover:bg-primary/10">How do I ease cramps?</button>
+        <button type="button" class="suggestion shrink-0 rounded-full border border-primary/40 bg-white dark:bg-[#2b1d25] px-3 py-1.5 text-primary hover:bg-primary/10">When am I most fertile?</button>
+        <button type="button" class="suggestion shrink-0 rounded-full border border-primary/40 bg-white dark:bg-[#2b1d25] px-3 py-1.5 text-primary hover:bg-primary/10">Is my discharge normal?</button>
+      </div>
       <div class="flex items-center gap-2">
         <input id="user-input" type="text" placeholder="Type your message..." class="flex-1 rounded-full border border-primary/30 bg-white dark:bg-[#2b1d25] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
         <button id="send-btn" class="flex items-center justify-center bg-primary text-white rounded-full h-10 w-10 hover:bg-opacity-90 transition-transform hover:scale-105">

@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "note": "General health education based on public guidance (for example NHS, ACOG and WHO). Not medical advice. Have a clinician review before wide launch.",
+  "lessons": [
+    {
+      "id": "normal-cycle",
+      "title": "What a normal cycle looks like",
+      "category": "Cycle basics",
+      "summary": "Day 1 of your cycle is the first day of real bleeding (not spotting). For most adults a cycle lasts 21 to 35 days, and a period lasts 2 to 7 days. Your cycle doesn't have to be exactly 28 days, and a few days' difference from month to month is normal.",
+      "tips": [
+        "Count from the first day of bleeding to the day before your next period starts. That's your cycle length.",
+        "Note your start dates for 3 months to learn your own pattern.",
+        "In the first few years after periods start, cycles of up to 45 days are common."
+      ],
+      "see_doctor": [
+        "Your cycles are often shorter than 21 days or longer than 35 days",
+        "Your period lasts more than 7 days",
+        "Your periods suddenly change a lot from your usual pattern"
+      ],
+      "keywords": ["normal cycle", "cycle length", "how long", "28 days", "regular", "count my cycle", "day 1", "first day", "how many days"]
+    },
+    {
+      "id": "cycle-phases",
+      "title": "The four phases of your cycle",
+      "category": "Cycle basics",
+      "summary": "Your cycle has four phases. The period (menstrual phase) is when the womb lining sheds. In the follicular phase, oestrogen rises and an egg matures. Ovulation is when the egg is released, about 14 days before your next period. The luteal phase follows: progesterone rises, and if there's no pregnancy, hormones drop and your period starts.",
+      "tips": [
+        "In a 28-day cycle, ovulation is around day 14. In a 35-day cycle, it's closer to day 21.",
+        "Energy often feels higher before ovulation and lower in the days before a period.",
+        "Bloating, breast tenderness and mood changes are common in the luteal phase."
+      ],
+      "see_doctor": [
+        "You're unsure where you are in your cycle because your periods are very unpredictable"
+      ],
+      "keywords": ["phase", "phases", "luteal", "follicular", "menstrual phase", "what day", "where am i in my cycle", "what is happening"]
+    },
+    {
+      "id": "late-period",
+      "title": "Late or missed period",
+      "category": "Common worries",
+      "summary": "A period can be late for many reasons. Pregnancy is one, but stress, illness, travel, big changes in weight or exercise, breastfeeding, hormonal contraception (including emergency pills) and conditions like PCOS or thyroid problems can all delay it. If you've had unprotected sex, a pregnancy test is the first step.",
+      "tips": [
+        "A test is most reliable from the first day your period was due, or 21 days after unprotected sex.",
+        "If the test is negative and your period still hasn't come, test again in a few days.",
+        "Stress really can delay ovulation, which pushes your period later."
+      ],
+      "see_doctor": [
+        "You've missed 3 periods in a row and aren't pregnant",
+        "You have a positive test with pain on one side or bleeding (see a doctor urgently)",
+        "Your periods have changed and you don't know why"
+      ],
+      "keywords": ["late", "missed", "not come", "hasn't come", "no period", "delayed", "overdue", "day 30", "day 32", "day 35", "day 40", "skipped", "am i pregnant"]
+    },
+    {
+      "id": "emergency-pill",
+      "title": "After the emergency pill (Postinor, P2 and others)",
+      "category": "Contraception",
+      "summary": "Levonorgestrel pills like Postinor work best the sooner you take them, ideally within 72 hours (3 days) of unprotected sex. Another type, ulipristal (ellaOne), works up to 120 hours. They mainly delay ovulation and don't end an existing pregnancy. Afterwards, your next period may come earlier or later than usual, and spotting is common.",
+      "tips": [
+        "Common side effects are nausea, headache, tiredness, breast tenderness and spotting. They usually pass in a few days.",
+        "If you vomit within 3 hours of taking it, speak to a pharmacist, because you may need another dose.",
+        "If your period is more than 7 days late, or lighter than usual, take a pregnancy test.",
+        "Emergency pills don't protect against STIs and aren't meant as regular contraception. A pharmacist or clinic can help you choose an ongoing method."
+      ],
+      "see_doctor": [
+        "Your period is more than 7 days late, or your pregnancy test is positive",
+        "You have sudden or severe pain low in your belly (see a doctor urgently)",
+        "You weigh more than 70 kg, as the usual dose may be less effective; ask a pharmacist before taking it"
+      ],
+      "keywords": ["postinor", "p2", "emergency pill", "morning after", "morning-after", "emergency contraception", "levonorgestrel", "ellaone", "plan b", "took a pill", "after the pill"]
+    },
+    {
+      "id": "cramps",
+      "title": "Period cramps and pain",
+      "category": "Symptoms",
+      "summary": "Cramps happen when the womb contracts to shed its lining. They usually start just before or as bleeding begins and ease after 2 to 3 days. Mild to moderate cramps are common.",
+      "tips": [
+        "Anti-inflammatory painkillers like ibuprofen work well when taken with food at the start of pain, as long as they're safe for you (not if you have stomach ulcers, some asthma or kidney problems).",
+        "Heat helps: a warm water bottle or warm bath.",
+        "Gentle movement like walking or stretching can ease cramps."
+      ],
+      "see_doctor": [
+        "The pain stops you working, studying or sleeping, or painkillers don't help",
+        "You have pain between periods, or pain during sex",
+        "The pain is getting worse over time (conditions like endometriosis or fibroids can be treated)"
+      ],
+      "keywords": ["cramp", "cramps", "period pain", "pain", "hurts", "painful", "belly pain", "abdominal pain", "lower back", "dysmenorrhea", "endometriosis"]
+    },
+    {
+      "id": "heavy-bleeding",
+      "title": "Heavy periods",
+      "category": "Symptoms",
+      "summary": "Periods are considered heavy if they get in the way of daily life, for example soaking a pad or tampon every 1 to 2 hours, passing clots bigger than about 2.5 cm, or bleeding through clothes. Heavy periods are common and treatable, and they can cause low iron.",
+      "tips": [
+        "Eat iron-rich foods such as beans, leafy greens, liver, fish and fortified cereals.",
+        "Tiredness, shortness of breath and pale skin can be signs of low iron. A simple blood test can check.",
+        "Note how many pads you use per day. It helps a doctor understand what's happening."
+      ],
+      "see_doctor": [
+        "You soak through a pad or tampon every hour for more than 2 hours, or feel dizzy or faint (get urgent help)",
+        "Your period lasts more than 7 days, or heavy bleeding happens most months",
+        "You feel very tired or breathless"
+      ],
+      "keywords": ["heavy", "heavy bleeding", "clots", "clot", "soaking", "flooding", "a lot of blood", "too much blood", "bleeding a lot", "anaemia", "anemia"]
+    },
+    {
+      "id": "spotting",
+      "title": "Spotting between periods",
+      "category": "Symptoms",
+      "summary": "Light spotting outside your period can be harmless. Common causes are ovulation, the first months of hormonal contraception, after an emergency pill, or early pregnancy (implantation spotting). It can also come from infections or other conditions, so keep an eye on patterns.",
+      "tips": [
+        "Note when the spotting happens in your cycle and how long it lasts.",
+        "If you might be pregnant, take a pregnancy test.",
+        "Spotting in the first 3 months of a new pill, implant or injection is common."
+      ],
+      "see_doctor": [
+        "You bleed after sex",
+        "Spotting keeps happening, gets heavier or comes with pain",
+        "You bleed after menopause"
+      ],
+      "keywords": ["spotting", "spot", "brown blood", "light bleeding", "bleeding between", "pink discharge", "implantation", "brown discharge"]
+    },
+    {
+      "id": "discharge",
+      "title": "Vaginal discharge through the cycle",
+      "category": "Body signals",
+      "summary": "Discharge is normal and keeps the vagina healthy. It changes through the cycle: often dry or sticky after a period, wetter and creamy as ovulation nears, and clear and stretchy like raw egg white around ovulation. After ovulation it usually becomes thicker again.",
+      "tips": [
+        "Avoid douching or scented washes inside the vagina. Plain water outside is enough.",
+        "Cotton underwear and changing out of damp clothes help prevent irritation.",
+        "Clear, stretchy discharge mid-cycle is a sign you're near ovulation."
+      ],
+      "see_doctor": [
+        "The discharge has a strong fishy smell, or turns green, yellow or grey",
+        "It looks like cottage cheese and you have itching or burning",
+        "You have pain, sores or bleeding with it"
+      ],
+      "keywords": ["discharge", "mucus", "white", "egg white", "slimy", "watery", "smell", "itching", "itchy", "yeast", "thrush"]
+    },
+    {
+      "id": "ovulation",
+      "title": "Ovulation and your fertile window",
+      "category": "Fertility",
+      "summary": "Ovulation usually happens about 14 days before your next period, not always on day 14. You can get pregnant from sex in the 5 days before ovulation and on the day itself, because sperm can survive about 5 days. Signs include clear, stretchy discharge, mild pain on one side and a small rise in body temperature after ovulation.",
+      "tips": [
+        "If your cycles are regular, subtract 14 from your usual cycle length to estimate your ovulation day.",
+        "Ovulation test strips detect the hormone surge 1 to 2 days before ovulation.",
+        "Tracking alone isn't reliable contraception, especially if your cycles vary."
+      ],
+      "see_doctor": [
+        "You've been trying to get pregnant for 12 months (or 6 months if you're over 35)",
+        "Your cycles are so irregular you can't tell when you ovulate"
+      ],
+      "keywords": ["ovulation", "ovulate", "fertile", "fertility", "get pregnant", "trying to conceive", "ttc", "safe days", "safe period", "fertile window"]
+    },
+    {
+      "id": "pms-mood",
+      "title": "PMS, mood and emotions",
+      "category": "Body signals",
+      "summary": "Many people notice mood swings, irritability, sadness, anxiety, bloating, cravings or tiredness in the 1 to 2 weeks before a period. That's premenstrual syndrome (PMS), linked to hormone changes after ovulation. It usually eases once bleeding starts.",
+      "tips": [
+        "Regular sleep, movement and meals help steady mood.",
+        "Cutting down on caffeine, alcohol and very salty food can ease bloating and irritability.",
+        "Write down symptoms for 2 to 3 cycles. Seeing the pattern helps you plan and helps a doctor if needed."
+      ],
+      "see_doctor": [
+        "Your mood changes are severe or affect your relationships, work or studies (this can be PMDD, which is treatable)",
+        "You have thoughts of harming yourself. Please reach out to someone you trust or a health service today."
+      ],
+      "keywords": ["mood", "moody", "sad", "crying", "angry", "irritable", "anxious", "anxiety", "depressed", "pms", "pmdd", "emotional", "cravings", "bloating", "bloated"]
+    },
+    {
+      "id": "breasts",
+      "title": "Breast tenderness and changes",
+      "category": "Body signals",
+      "summary": "It's common for breasts to feel fuller, heavier or tender in the days before a period, because of rising progesterone. This usually eases once your period starts. Early pregnancy and hormonal contraception, including emergency pills, can cause similar tenderness.",
+      "tips": [
+        "A supportive, well-fitting bra can ease tenderness.",
+        "Cutting back on caffeine helps some people.",
+        "Get to know how your breasts normally look and feel, so you notice changes."
+      ],
+      "see_doctor": [
+        "You find a new lump or thickening",
+        "You have nipple discharge (when not breastfeeding), skin dimpling or a nipple turning inward",
+        "Pain is in one spot and doesn't go away after your period"
+      ],
+      "keywords": ["breast", "breasts", "boobs", "chest", "tender", "sore breasts", "full breasts", "nipple", "lump"]
+    },
+    {
+      "id": "irregular-pcos",
+      "title": "Irregular periods and PCOS",
+      "category": "Common worries",
+      "summary": "Periods are irregular when the gap between them changes a lot, or cycles are often shorter than 21 days or longer than 35. Common causes include stress, weight changes, intense exercise, thyroid problems and polycystic ovary syndrome (PCOS). PCOS often comes with irregular periods, extra facial or body hair, acne and weight gain.",
+      "tips": [
+        "Track your dates for a few months. It's the most useful thing to bring to an appointment.",
+        "Regular activity and balanced meals can help regulate cycles, especially with PCOS.",
+        "PCOS is common and manageable, and many people with it get pregnant."
+      ],
+      "see_doctor": [
+        "Your periods are irregular for several months, or you go 3 months without one",
+        "You have signs of PCOS such as extra hair growth or acne along with irregular periods",
+        "You're trying to get pregnant and your cycles are irregular"
+      ],
+      "keywords": ["irregular", "pcos", "polycystic", "unpredictable", "every month different", "two periods", "twice a month", "hormonal imbalance", "facial hair"]
+    },
+    {
+      "id": "pregnancy-test",
+      "title": "Taking a pregnancy test",
+      "category": "Common worries",
+      "summary": "Home tests detect the pregnancy hormone hCG in urine. They're most reliable from the first day your period is due, or at least 21 days after unprotected sex. Testing too early can give a negative result even if you are pregnant.",
+      "tips": [
+        "Use your first urine of the morning if you're testing early, as it's the most concentrated.",
+        "A faint line usually still means positive. Follow the test's instructions on timing.",
+        "If it's negative but your period doesn't come, test again in 3 to 5 days."
+      ],
+      "see_doctor": [
+        "You get a positive result, to start care and talk through your options",
+        "You have a positive test with one-sided belly pain, shoulder-tip pain or bleeding (get urgent help)"
+      ],
+      "keywords": ["pregnancy test", "test", "pregnant", "positive", "negative", "faint line", "hcg", "when to test"]
+    },
+    {
+      "id": "period-care",
+      "title": "Period care and hygiene",
+      "category": "Self-care",
+      "summary": "Pads, tampons, menstrual cups and period underwear are all safe when used correctly. What matters most is changing them regularly and keeping things clean.",
+      "tips": [
+        "Change pads every 4 to 8 hours, or sooner if they're full.",
+        "Never leave a tampon in for more than 8 hours, and use the lowest absorbency you need.",
+        "Wash the outside of the vulva with plain water. There's no need for internal washing.",
+        "Drink water, rest, and keep up iron-rich food during your period."
+      ],
+      "see_doctor": [
+        "You use tampons or a cup and suddenly get a high fever, rash, vomiting or dizziness. Remove it and get urgent help, as this can be toxic shock syndrome."
+      ],
+      "keywords": ["pad", "pads", "tampon", "tampons", "cup", "menstrual cup", "hygiene", "clean", "wash", "sanitary", "how often change"]
+    },
+    {
+      "id": "urgent",
+      "title": "When to get urgent help",
+      "category": "Safety",
+      "summary": "Most cycle changes aren't emergencies, but some symptoms need care straight away.",
+      "tips": [
+        "Very heavy bleeding with dizziness, fainting, a racing heart or soaking a pad every hour",
+        "Sudden severe pain in your belly, especially on one side and if your period is late or you've had a positive test (this can be an ectopic pregnancy)",
+        "Fever with pain low in your belly or unusual discharge",
+        "High fever, rash or vomiting while using a tampon or cup",
+        "Thoughts of harming yourself"
+      ],
+      "see_doctor": [
+        "Any of the above: go to the nearest hospital or emergency service, or call your local emergency number"
+      ],
+      "keywords": ["emergency", "urgent", "faint", "fainted", "fainting", "dizzy", "severe pain", "unbearable", "can't stand", "fever", "ectopic", "suicide", "kill myself", "harm myself", "soaking every hour"]
+    }
+  ]
+}

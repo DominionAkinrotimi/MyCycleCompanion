@@ -9,7 +9,7 @@ function addMessage(role, text) {
     role === "user"
       ? "bg-primary text-white self-end ml-auto"
       : "bg-white dark:bg-[#2b1d25] text-[#181114] dark:text-gray-200";
-  bubble.className = `max-w-[80%] rounded-2xl px-4 py-3 text-sm shadow-sm ${bubbleStyle}`;
+  bubble.className = `max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-line shadow-sm ${bubbleStyle}`;
 
   const wrapper = document.createElement("div");
   wrapper.className = `flex flex-col ${
@@ -62,4 +62,11 @@ async function sendMessage() {
 sendBtn.addEventListener("click", sendMessage);
 userInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") sendMessage();
+});
+// Quick-question buttons: send the question as if typed.
+document.querySelectorAll(".suggestion").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    userInput.value = btn.textContent;
+    sendMessage();
+  });
 });
